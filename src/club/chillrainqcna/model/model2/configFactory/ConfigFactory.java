@@ -12,7 +12,7 @@ import java.util.Set;
  */
 public class ConfigFactory {
     //1 创建容器用于存储对象
-    private static HashMap<String, Object> map = new HashMap<>();
+    private static HashMap<String, Object> map = new HashMap();
     //2 加载配置文件并将对象存储到容器中
     //2.1要通过类加载器来获取输入流！
     static{
