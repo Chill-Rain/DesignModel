@@ -7,6 +7,7 @@ public class Client {
     public static void main(String[] args) {
         ConfigFactory configFactory = new ConfigFactory();
         Coffee americancoffee = configFactory.getCoffee("americancoffee");
-        System.out.println(americancoffee);
+        Coffee americancoffee1 = configFactory.getCoffee("americancoffee");
+        System.out.println(americancoffee == americancoffee1);
     }
 }
